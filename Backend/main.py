@@ -2,8 +2,8 @@
 # To run this backend server:
 # 1. Make sure you have Python and PostgreSQL installed and your 'shovik07' database is set up.
 # 2. Create a .env file in this directory with your DATABASE_URL.
-# 3. Install all necessary libraries with this single command:
-#    pip install fastapi "uvicorn[standard]" sqlalchemy psycopg2-binary pydantic[email] python-dotenv
+# 3. Install all necessary libraries. Note the quotes around "pydantic[email]" to prevent shell errors.
+#    pip install fastapi "uvicorn[standard]" sqlalchemy psycopg2-binary "pydantic[email]" python-dotenv
 # 4. In your terminal, run the command to start the server:
 #    uvicorn main:app --reload
 # 5. Once running, go to http://127.0.0.1:8000/docs to add and manage your portfolio data.
